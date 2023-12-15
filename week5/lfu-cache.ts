@@ -14,6 +14,8 @@ class LFUCache {
       this.countMap[count] = countKeys.filter((x) => x !== key);
       if (this.countMap[count].length === 0) {
         delete this.countMap[count];
+        
+        // hi 
       }
     }
     const nextKeys = this.countMap[count + 1];
